@@ -95,6 +95,7 @@ namespace WebDiaryAPI.Controllers
             }
 
             _dbContext.DiaryModels.Remove(diaryEntry);
+
             await _dbContext.SaveChangesAsync();
 
             return NoContent();
